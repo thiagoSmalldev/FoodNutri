@@ -10,13 +10,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_10_04_211841) do
+ActiveRecord::Schema.define(version: 2023_10_04_215215) do
 
   create_table "foods", force: :cascade do |t|
     t.datetime "imported_t"
     t.string "status"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "url"
+    t.string "creator"
+    t.datetime "created_t"
+    t.datetime "last_modified_t"
+    t.string "product_name"
+    t.string "quantity"
+    t.string "brands"
+    t.string "categories"
+    t.string "labels"
+    t.string "cities"
+    t.string "purchase_places"
+    t.string "stores"
+    t.text "ingredients_text"
+    t.string "traces"
+    t.string "serving_size"
+    t.float "serving_quantity"
+    t.integer "nutriscore_score"
+    t.string "nutriscore_grade"
+    t.string "main_category"
+    t.string "image_url"
   end
 
 end
