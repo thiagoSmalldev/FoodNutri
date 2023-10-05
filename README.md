@@ -1,24 +1,28 @@
-# README
+# FoodNutri API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Descrição
 
-Things you may want to cover:
+A FoodNutri API é um sistema de gerenciamento de informações sobre alimentos baseado nos dados do Open Food Facts. Ela permite importar e consultar informações sobre produtos alimentícios, incluindo detalhes sobre ingredientes, informações nutricionais e muito mais.
 
-* Ruby version
+## Tecnologias Utilizadas
 
-* System dependencies
+- Linguagem: Ruby
+- Framework: Ruby on Rails
+- Banco de Dados: SQLite
+- Bibliotecas e Gems adicionais (listar quaisquer outras tecnologias ou bibliotecas usadas)
 
-* Configuration
+## Instalação e Uso
 
-* Database creation
+Siga estas etapas para configurar e executar o projeto em seu ambiente local:
 
-* Database initialization
+1. Clone este repositório:
 
-* How to run the test suite
+   ```bash
+   git clone https://github.com/thiagoSmalldev/FoodNutri.git
 
-* Services (job queues, cache servers, search engines, etc.)
+   bundle install
 
-* Deployment instructions
+   rails server
+   ```
 
-* ...
+Este é um desafio Coodesh
