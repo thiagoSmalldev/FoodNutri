@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_10_04_215215) do
+ActiveRecord::Schema.define(version: 2023_10_05_201608) do
 
   create_table "foods", force: :cascade do |t|
     t.datetime "imported_t"
@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 2023_10_04_215215) do
     t.string "nutriscore_grade"
     t.string "main_category"
     t.string "image_url"
+    t.integer "code"
   end
 
 end

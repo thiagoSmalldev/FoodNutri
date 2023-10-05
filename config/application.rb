@@ -17,8 +17,12 @@ require "rails/test_unit/railtie"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+require_relative "../lib/middleware/api_key_authentication"
+
 module FoodNutri
   class Application < Rails::Application
+    config.middleware.use ApiKeyAuthentication
+
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
 
